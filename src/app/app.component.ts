@@ -14,16 +14,42 @@ import { Component } from '@angular/core';
                            //property binding   
     <app-home [pageName]="title"> </app-home>  -->
   
-    //two way binding <br>
+    <!-- //two way binding <br>
      <input type="text" [(ngModel)]="name"> <br>  
     <input type="text" [(ngModel)]="name">  <br> 
-      {{name}}
+      {{name}} -->
+
+      <!-- //*ngFor
+      <ul>
+
+      <li *ngFor="let name of names; let index  = index;
+                                      let first=first;">{{name}}- {{index}} - {{first}}</li>
+      </ul> -->
+
+      <!-- //*nfIf
  
+<div *ngIf="visible; else elseContent">hello</div>
+
+<ng-template #elseContent> byeeee </ng-template> -->
+
+<div appExample color="blue">
+<h1>Hello</h1>
+</div>
+
+
+
+
+
  `,
 
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'AngularProject1';
-  name:string;
+  //to create directive ng g d directives/directivename it generate directive in directives folder
+  //if we dont want folder ng g d directivename
+
+  // name:string;
+  // names: string[] =["Andy", "Ben","Ali","Aland","Daisy","Anne"];
+  // visible:boolean =false;
 }
