@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   // templateUrl: './app.component.html',
 
-  template:`
+  template: `
      <!-- <h1>{{title}}<h1>    //text-intepolation - when you use the title field of appcomponent 
  class like this it is text intepolation 
 
@@ -32,14 +32,27 @@ import { Component } from '@angular/core';
 
 <ng-template #elseContent> byeeee </ng-template> -->
 
-<div appExample color="blue">
+<!-- <div appExample color="blue">
 <h1>Hello</h1>
-</div>
+</div> -->
 
+<!-- <div *appCustomif="false">
+hello  
+</div> -->
 
+<!-- <ul>
 
-
-
+<li *appCustomfor="5;let index=index">
+  hello
+  {{index}}
+</li>
+</ul> -->
+<ul>
+<li *appCustomfor="names;let name;let index=index ">
+  
+  {{name}} - {{index}}
+</li>
+</ul>
  `,
 
   styleUrl: './app.component.scss'
@@ -50,6 +63,6 @@ export class AppComponent {
   //if we dont want folder ng g d directivename
 
   // name:string;
-  // names: string[] =["Andy", "Ben","Ali","Aland","Daisy","Anne"];
+  names: string[] = ["Andy", "Ben", "Ali", "Aland", "Daisy", "Anne"];
   // visible:boolean =false;
 }
