@@ -47,12 +47,18 @@ hello
   {{index}}
 </li>
 </ul> -->
-<ul>
+<!-- <ul>
 <li *appCustomfor="names;let name;let index=index ">
   
   {{name}} - {{index}}
 </li>
-</ul>
+</ul> -->
+
+{{name | uppercase}} - //customPipe <br>
+{{name| slice:1:3}} <br>
+
+{{"this is a sentence that will be used with custom pipe...." | custom:10:25}}
+
  `,
 
   styleUrl: './app.component.scss'
@@ -63,6 +69,7 @@ export class AppComponent {
   //if we dont want folder ng g d directivename
 
   // name:string;
-  names: string[] = ["Andy", "Ben", "Ali", "Aland", "Daisy", "Anne"];
+  //names: string[] = ["Andy", "Ben", "Ali", "Aland", "Daisy", "Anne"];
   // visible:boolean =false;
+  name = "Fidan"
 }

@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { ExampleDirective } from './directives/example.directive';
 import { CustomifDirective } from './directives/customif.directive';
 import { CustomforDirective } from './directives/customfor.directive';
+import { CustomPipe } from './pipes/custom.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CustomforDirective } from './directives/customfor.directive';
     HomeComponent,
     ExampleDirective,
     CustomifDirective,
-    CustomforDirective
+    CustomforDirective,
+    CustomPipe
   ],
   imports: [
     BrowserModule,
