@@ -9,6 +9,9 @@ import { ExampleDirective } from './directives/example.directive';
 import { CustomifDirective } from './directives/customif.directive';
 import { CustomforDirective } from './directives/customfor.directive';
 import { CustomPipe } from './pipes/custom.pipe';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
+import { Child2Component } from './components/child2/child2.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { CustomPipe } from './pipes/custom.pipe';
     ExampleDirective,
     CustomifDirective,
     CustomforDirective,
-    CustomPipe
+    CustomPipe,
+    ParentComponent,
+    ChildComponent,
+    Child2Component
   ],
   imports: [
     BrowserModule,
