@@ -1,6 +1,6 @@
 # AngularProject1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0. Purpose of project is learning Angular from scratch.
 
 ## Development server
 
