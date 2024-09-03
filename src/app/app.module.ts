@@ -12,6 +12,7 @@ import { CustomPipe } from './pipes/custom.pipe';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { Child2Component } from './components/child2/child2.component';
+import { ExampleComponent } from './components/example/example.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { Child2Component } from './components/child2/child2.component';
     CustomPipe,
     ParentComponent,
     ChildComponent,
-    Child2Component
+    Child2Component,
+    ExampleComponent
   ],
   imports: [
     BrowserModule,

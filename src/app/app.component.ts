@@ -59,7 +59,10 @@ hello
 
 {{"this is a sentence that will be used with custom pipe...." | custom:10:25}} -->
 
-<app-parent></app-parent>
+<!-- <app-parent></app-parent> -->
+
+<app-example data="merhaba"> <br>fjdshfjdsfhds</app-example>
+
 
  `,
 
@@ -74,4 +77,5 @@ export class AppComponent {
   //names: string[] = ["Andy", "Ben", "Ali", "Aland", "Daisy", "Anne"];
   // visible:boolean =false;
   //name = "Fidan"
+
 }
