@@ -13,6 +13,7 @@ import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { Child2Component } from './components/child2/child2.component';
 import { ExampleComponent } from './components/example/example.component';
+import { TdFormComponent } from './components/td-form/td-form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ExampleComponent } from './components/example/example.component';
     ParentComponent,
     ChildComponent,
     Child2Component,
-    ExampleComponent
+    ExampleComponent,
+    TdFormComponent
   ],
   imports: [
     BrowserModule,

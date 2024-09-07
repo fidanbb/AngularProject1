@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { log } from 'console';
 
 @Component({
   selector: 'app-root',
@@ -61,7 +62,9 @@ hello
 
 <!-- <app-parent></app-parent> -->
 
-<app-example data="merhaba"> <br>fjdshfjdsfhds</app-example>
+<!-- <app-example data="merhaba"> <br>fjdshfjdsfhds</app-example> -->
+
+<app-td-form></app-td-form>
 
 
  `,
@@ -77,5 +80,6 @@ export class AppComponent {
   //names: string[] = ["Andy", "Ben", "Ali", "Aland", "Daisy", "Anne"];
   // visible:boolean =false;
   //name = "Fidan"
+ 
 
 }
