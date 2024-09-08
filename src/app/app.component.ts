@@ -64,7 +64,9 @@ hello
 
 <!-- <app-example data="merhaba"> <br>fjdshfjdsfhds</app-example> -->
 
-<app-td-form></app-td-form>
+<!-- <app-td-form></app-td-form> // template-driven form -->
+
+<app-md-form></app-md-form>
 
 
  `,
