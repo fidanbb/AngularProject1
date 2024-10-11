@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { log } from 'console';
+import { ProductService } from './productservice';
 
 @Component({
   selector: 'app-root',
   // templateUrl: './app.component.html',
-
+  providers:[],
   template: `
      <!-- <h1>{{title}}<h1>    //text-intepolation - when you use the title field of appcomponent 
  class like this it is text intepolation 
@@ -66,7 +67,7 @@ hello
 
 <!-- <app-td-form></app-td-form> // template-driven form -->
 
-<app-md-form></app-md-form>
+<!--<app-md-form></app-md-form> -->
 
 
  `,
@@ -75,6 +76,9 @@ hello
 })
 export class AppComponent {
   title = 'AngularProject1';
+  constructor(private productService:ProductService){
+      console.log(productService.getProducts())
+  }
   //to create directive ng g d directives/directivename it generate directive in directives folder
   //if we dont want folder ng g d directivename
 

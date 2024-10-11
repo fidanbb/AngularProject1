@@ -15,6 +15,7 @@ import { Child2Component } from './components/child2/child2.component';
 import { ExampleComponent } from './components/example/example.component';
 import { TdFormComponent } from './components/td-form/td-form.component';
 import { MdFormComponent } from './components/md-form/md-form.component';
+import { ProductService } from './productservice';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MdFormComponent } from './components/md-form/md-form.component';
     ReactiveFormsModule
   ],
   providers: [
+    // ProductService,  //inject productService 
     provideClientHydration()
   ],
   bootstrap: [AppComponent]
